@@ -29,13 +29,13 @@ export function ThemeSwitcher() {
     <div className="flex justify-end gap-2 items-center">
       <button
         onClick={handleThemeChange}
-        className="relative inline-flex h-8 w-20 items-center rounded-full cursor-pointer bg-gray-300 dark:bg-gray-600 transition-colors"
+        className="relative inline-flex h-6 w-15 sm:h-8 sm:w-20 items-center rounded-full cursor-pointer bg-gray-300 dark:bg-gray-600 transition-colors"
       >
         <span
-          className={`flex items-center justify-center text-slate-900 h-6 w-6 transform rounded-full bg-white shadow transition-transform duration-300 ease-in-out ${theme === "dark" ? "translate-x-12" : "translate-x-1"
+          className={`flex items-center justify-center text-slate-900 h-5 w-5 sm:h-6 sm:w-6 transform rounded-full bg-white shadow transition-transform duration-300 ease-in-out ${theme === "dark" ? "translate-x-8 sm:translate-x-12 " : "translate-x-1 sm:translate-x-1"
             }`}
         >
-          {theme === "dark" ? <FaMoon size={18} /> : <MdSunny size={18} />}
+          {theme === "dark" ? <FaMoon className="h-4 w-4 sm:w-5 sm:h-5" size={18} /> : <MdSunny size={18} />}
         </span>
       </button>
     </div>
