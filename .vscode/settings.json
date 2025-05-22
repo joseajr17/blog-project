@@ -2,15 +2,24 @@
     "window.zoomLevel": 1,
     "breadcrumbs.enabled": false,
     "editor.fontSize": 14,
-    "debug.console.fontSize": 18,
-    "terminal.integrated.fontSize": 18,
+    "debug.console.fontSize": 16,
+    "terminal.integrated.fontSize": 16,
     "editor.glyphMargin": false,
-    "workbench.activityBar.location": "hidden",
-    "editor.lineNumbers": "off",
+    "workbench.activityBar.location": "default",
+    "editor.lineNumbers": "on",
     "files.eol": "\n",
     "workbench.editor.labelFormat": "short",
     "editor.tabSize": 2,
     "explorer.compactFolders": false,
+    "editor.minimap.enabled": true,
+
+    "code-runner.clearPreviousOutput": true,
+    "code-runner.runInTerminal": true,
+    "code-runner.ignoreSelection": true,
+    "code-runner.executorMap": {
+      "typescript": "clear ; npx tsx",
+      
+    },
   
     // 🛠 Formatação e Lint
     "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -24,7 +33,7 @@
       "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[typescript]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
+      "editor.defaultFormatter": "vscode.typescript-language-features"
     },
     "[xml]": {
       "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -34,5 +43,8 @@
     },
     "[html]": {
       "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+      "editor.defaultFormatter": "vscode.typescript-language-features"
     }
   }

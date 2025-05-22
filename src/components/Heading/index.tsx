@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 type HeadingProps = {
   children: React.ReactNode;
   url: string;
@@ -7,13 +9,13 @@ type HeadingProps = {
 export function Heading({ children, url, as: TagH = 'h2' }: HeadingProps) {
   const headingMapClasses = {
     h1: 'text-2xl font-extrabold sm:text-4xl md:text-4xl',
-    h2: 'text-xl font-extrabold sm:text-2xl md:text-3xl'
+    h2: 'text-xl/tight font-bold sm:text-2xl'
   }
   return (
     <TagH className={headingMapClasses[TagH]}>
-      <a href={url}>
+      <Link className="hover:text-slate-900/70 dark:hover:text-slate-100/70 transition" href={url}>
         {children}
-      </a>
+      </Link>
     </TagH>
   );
 }
