@@ -1,13 +1,14 @@
 import { PostModel } from "@/models/post/post-model";
-import { PostRespository } from "./post-repository";
+import { PostRepository } from "./post-repository";
 import { resolve } from "path";
 import { readFile } from "fs/promises";
+import { notFound } from "next/navigation";
 
 const ROOT_DIR = process.cwd();
 const JSON_FILE_PATH = resolve(ROOT_DIR, 'src', 'db', 'seed', 'posts.json');
 
 
-export class JsonPostRepository implements PostRespository {
+export class JsonPostRepository implements PostRepository {
 
   private async readFromDisk(): Promise<PostModel[]> {
     const json = await readFile(JSON_FILE_PATH, 'utf-8');
@@ -30,7 +31,18 @@ export class JsonPostRepository implements PostRespository {
 
     return post;
   }
+
+  async findBySlug(slug: string): Promise<PostModel> {
+    const posts = await this.findAllPublic();
+    const post = posts.find(post => post.slug === slug);
+
+    if (!post)
+      notFound();
+
+    return post;
+  }
+
 }
 
-export const postRespository: PostRespository = new JsonPostRepository();
+export const postRepository: PostRepository = new JsonPostRepository();
 
