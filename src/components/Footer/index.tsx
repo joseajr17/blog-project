@@ -3,7 +3,7 @@ import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 
 export function Footer() {
   return (
-    <footer className="flex flex-col items-center justify-center pb-16 text-center gap-2">
+    <footer className="flex flex-col items-center justify-center pb-5 text-center gap-2">
       <p>
         <span>Copyright &copy; {new Date().getFullYear()} - </span>
         <Link href='/'>Flamengo News </Link>
