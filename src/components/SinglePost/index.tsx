@@ -2,6 +2,7 @@ import { postRepository } from "@/repositories/post/json-post-repository";
 import Image from "next/image";
 import { Heading } from "../Heading";
 import { PostDate } from "../PostDate";
+import { MarkDownSafe } from "../MarkDownSafe";
 
 type SinglePostProps = {
   slug: string;
@@ -23,6 +24,7 @@ export async function SinglePost({ slug }: SinglePostProps) {
 
       <p className="text-xl mb-12 italic dark:text-slate-500 text-slate-500">{post.excerpt}</p>
 
+      <MarkDownSafe markDown={post.content} />
     </article>
   );
 }
