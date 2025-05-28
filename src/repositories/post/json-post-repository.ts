@@ -5,8 +5,7 @@ import { readFile } from "fs/promises";
 import { notFound } from "next/navigation";
 
 const ROOT_DIR = process.cwd();
-const JSON_FILE_PATH = resolve(ROOT_DIR, 'src', 'db', 'seed', 'posts.json');
-
+const JSON_FILE_PATH = resolve(ROOT_DIR, 'src', 'db', 'seed', 'posts2.json');
 
 export class JsonPostRepository implements PostRepository {
 
@@ -15,6 +14,10 @@ export class JsonPostRepository implements PostRepository {
     const parsedJson = JSON.parse(json);
     const { posts } = parsedJson;
     return posts;
+  }
+
+  async findAll(): Promise<PostModel[]> {
+    return await this.readFromDisk();;
   }
 
   async findAllPublic(): Promise<PostModel[]> {
@@ -41,7 +44,6 @@ export class JsonPostRepository implements PostRepository {
 
     return post;
   }
-
 }
 
 export const postRepository: PostRepository = new JsonPostRepository();
