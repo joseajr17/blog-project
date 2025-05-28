@@ -1,5 +1,5 @@
 import { SinglePost } from "@/components/SinglePost";
-import { postRepository } from "@/repositories/post/json-post-repository";
+import { postRepository } from "@/repositories/post/index";
 import { Metadata } from "next";
 import { Suspense } from "react";
 

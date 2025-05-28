@@ -1,4 +1,4 @@
-import { postRepository } from "@/repositories/post/json-post-repository";
+import { postRepository } from "@/repositories/post/index";
 import Image from "next/image";
 import { Heading } from "../Heading";
 import { PostDate } from "../PostDate";
