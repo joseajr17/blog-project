@@ -9,7 +9,7 @@ type SinglePostProps = {
 }
 
 export async function SinglePost({ slug }: SinglePostProps) {
-  const post = await postRepository.findBySlug(slug);
+  const post = await postRepository.findBySlugPublic(slug);
   return (
     <article className="text-justify mb-16">
       <header className="flex flex-col gap-4 mb-4">

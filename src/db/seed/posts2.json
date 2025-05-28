@@ -7,7 +7,7 @@
       "excerpt": "O futebol não é apenas um esporte, mas uma parte essencial da identidade nacional brasileira.",
       "content": "Desde as peladas nas praias até os grandes clássicos, o futebol impacta a cultura, a economia e o cotidiano do Brasil.",
       "coverImageUrl": "/images/img01.jpg",
-      "published": true,
+      "published": false,
       "createdAt": "2025-05-27T10:00:00Z",
       "updatedAt": "2025-05-27T10:00:00Z",
       "author": "Rafael Souza"
@@ -31,7 +31,7 @@
       "excerpt": "As Olimpíadas são o maior evento esportivo do mundo e carregam muita história.",
       "content": "Desde sua criação em 1896, os Jogos Olímpicos simbolizam a união dos povos através do esporte.",
       "coverImageUrl": "/images/img03.jpg",
-      "published": true,
+      "published": false,
       "createdAt": "2025-05-25T08:00:00Z",
       "updatedAt": "2025-05-25T08:00:00Z",
       "author": "Carlos Mendes"
@@ -55,7 +55,7 @@
       "excerpt": "O treino funcional é cada vez mais utilizado por atletas de diferentes modalidades.",
       "content": "Esse tipo de treino melhora força, resistência, equilíbrio e agilidade, contribuindo para a performance esportiva.",
       "coverImageUrl": "/images/img05.jpg",
-      "published": true,
+      "published": false,
       "createdAt": "2025-05-23T06:00:00Z",
       "updatedAt": "2025-05-23T06:00:00Z",
       "author": "Lucas Pereira"
