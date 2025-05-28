@@ -1,0 +1,76 @@
+{
+  "posts": [
+    {
+      "id": "1a2b3c4d-1234-5678-9101-abcdef123456",
+      "title": "Como o futebol influencia a cultura brasileira",
+      "slug": "como-o-futebol-influencia-a-cultura-brasileira",
+      "excerpt": "O futebol não é apenas um esporte, mas uma parte essencial da identidade nacional brasileira.",
+      "content": "Desde as peladas nas praias até os grandes clássicos, o futebol impacta a cultura, a economia e o cotidiano do Brasil.",
+      "coverImageUrl": "/images/img01.jpg",
+      "published": true,
+      "createdAt": "2025-05-27T10:00:00Z",
+      "updatedAt": "2025-05-27T10:00:00Z",
+      "author": "Rafael Souza"
+    },
+    {
+      "id": "2b3c4d5e-2345-6789-1011-bcdef2345678",
+      "title": "Os benefícios da corrida para a saúde",
+      "slug": "beneficios-da-corrida-para-a-saude",
+      "excerpt": "Correr é uma das atividades físicas mais completas e acessíveis.",
+      "content": "Praticar corrida regularmente melhora o sistema cardiovascular, reduz o estresse e promove bem-estar físico e mental.",
+      "coverImageUrl": "/images/img02.jpg",
+      "published": true,
+      "createdAt": "2025-05-26T09:00:00Z",
+      "updatedAt": "2025-05-26T09:00:00Z",
+      "author": "Mariana Alves"
+    },
+    {
+      "id": "3c4d5e6f-3456-7890-1121-cdef34567890",
+      "title": "História das Olimpíadas modernas",
+      "slug": "historia-das-olimpiadas-modernas",
+      "excerpt": "As Olimpíadas são o maior evento esportivo do mundo e carregam muita história.",
+      "content": "Desde sua criação em 1896, os Jogos Olímpicos simbolizam a união dos povos através do esporte.",
+      "coverImageUrl": "/images/img03.jpg",
+      "published": true,
+      "createdAt": "2025-05-25T08:00:00Z",
+      "updatedAt": "2025-05-25T08:00:00Z",
+      "author": "Carlos Mendes"
+    },
+    {
+      "id": "4d5e6f70-4567-8901-1223-def456789012",
+      "title": "Os fundamentos do basquete para iniciantes",
+      "slug": "fundamentos-do-basquete-para-iniciantes",
+      "excerpt": "Aprender os fundamentos do basquete é essencial para quem quer começar no esporte.",
+      "content": "Dominar o drible, o arremesso e a marcação são passos fundamentais para quem quer jogar basquete.",
+      "coverImageUrl": "/images/img04.jpg",
+      "published": true,
+      "createdAt": "2025-05-24T07:00:00Z",
+      "updatedAt": "2025-05-24T07:00:00Z",
+      "author": "Fernanda Lima"
+    },
+    {
+      "id": "5e6f7081-5678-9012-1324-ef5678901234",
+      "title": "Como o treino funcional melhora o desempenho nos esportes",
+      "slug": "treino-funcional-desempenho-esportes",
+      "excerpt": "O treino funcional é cada vez mais utilizado por atletas de diferentes modalidades.",
+      "content": "Esse tipo de treino melhora força, resistência, equilíbrio e agilidade, contribuindo para a performance esportiva.",
+      "coverImageUrl": "/images/img05.jpg",
+      "published": true,
+      "createdAt": "2025-05-23T06:00:00Z",
+      "updatedAt": "2025-05-23T06:00:00Z",
+      "author": "Lucas Pereira"
+    },
+    {
+  "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+  "title": "Guia Completo de Montagem de Treino Funcional para Atletas",
+  "slug": "guia-completo-de-treino-funcional-para-atletas",
+  "excerpt": "Aprenda a estruturar treinos funcionais de alta performance, com foco em força, agilidade e prevenção de lesões.",
+  "content": "**Disclaimer:** Este guia é constantemente atualizado com novas técnicas e metodologias. Sinta-se livre para colaborar, sugerir melhorias e adaptar os exercícios às suas necessidades específicas.\r\n\r\n# Treino Funcional para Atletas\r\n\r\nEste é meu esforço para criar um guia completo sobre [treino funcional](https://pt.wikipedia.org/wiki/Treino_funcional), focado em melhorar a performance esportiva. O objetivo é oferecer uma estrutura que qualquer atleta — seja de futebol, corrida, basquete ou natação — possa adaptar.\r\n\r\nPara monitoramento dos treinos, recomendo plataformas como [Strava](https://www.strava.com/) ou [Garmin Connect](https://connect.garmin.com/). Elas ajudam no acompanhamento de carga, intensidade e evolução.\r\n\r\n## Estrutura do Treino Funcional\r\n\r\nO treino está dividido em quatro camadas principais:\r\n\r\n### 1. Mobilidade e Ativação\r\n\r\n> A mobilidade prepara o corpo para movimentos mais complexos, reduzindo o risco de lesões.\r\n\r\n- Rolamento miofascial (foam roller)\r\n- Alongamentos dinâmicos\r\n- Exercícios de ativação dos glúteos, core e escápulas\r\n\r\n### 2. Força Funcional\r\n\r\n> Desenvolve força em padrões de movimento, não apenas em músculos isolados.\r\n\r\n- Agachamento unilateral (pistol squat)\r\n- Levantamento terra com kettlebell\r\n- Flexão de braços instável (bosu ou trx)\r\n- Remada baixa com elástico\r\n\r\n### 3. Potência e Agilidade\r\n\r\n> Essencial para esportes que exigem arranque, salto, sprint e mudança de direção.\r\n\r\n- Saltos pliométricos (caixa, barreira)\r\n- Sprint curto com resistência (paraquedas, trenó)\r\n- Ladder drills (escada de agilidade)\r\n- Skater jumps (saltos laterais)\r\n\r\n### 4. Condicionamento Metabólico\r\n\r\n> Simula a demanda física de uma partida, prova ou competição.\r\n\r\n- Circuito de 4 exercícios (ex.: kettlebell swing, burpee, mountain climber e corrida estacionária)\r\n- HIIT: 30 segundos ON / 15 segundos OFF (4 a 8 rounds)\r\n- Sled push (empurrar trenó)\r\n\r\n## Equipamentos Sugeridos\r\n\r\n- Kettlebell\r\n- TRX ou fitball\r\n- Corda naval\r\n- Bosu e escada de agilidade\r\n- Sled (trenó de empurrar)\r\n- Elásticos de resistência\r\n\r\n## Exemplo de Treino Completo\r\n\r\n```\r\n🔸 Aquecimento:\r\n- Foam roller: 2 min\r\n- Mobilidade dinâmica: 5 min\r\n\r\n🔸 Força:\r\n- Agachamento unilateral: 3x10\r\n- Remada elástica: 3x12\r\n- Flexão instável: 3x12\r\n\r\n🔸 Potência:\r\n- Ladder drill: 4x20 seg\r\n- Saltos na caixa: 3x10\r\n\r\n🔸 Condicionamento:\r\n- Circuito 3 rounds:\r\n  • Kettlebell swing - 20 reps\r\n  • Burpee - 15 reps\r\n  • Mountain climber - 30 reps\r\n  • Corrida estacionária - 40 seg\r\n\r\n🔸 Resfriamento:\r\n- Alongamento estático: 5 min\r\n```\r\n\r\n## Conclusão\r\n\r\nO treino funcional é uma ferramenta versátil, capaz de melhorar a performance, a prevenção de lesões e a capacidade física de qualquer atleta. Lembre-se: adapte sempre à sua modalidade e procure acompanhamento profissional.\r\n\r\n[Saiba mais sobre treino funcional aqui.](https://pt.wikipedia.org/wiki/Treino_funcional)",
+  "coverImageUrl": "/images/img06.jpg",
+  "published": true,
+  "createdAt": "2025-05-27T15:00:00Z",
+  "updatedAt": "2025-05-27T15:00:00Z",
+  "author": "Bruno Oliveira"
+}
+  ]
+}
