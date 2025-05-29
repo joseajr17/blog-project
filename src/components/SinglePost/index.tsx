@@ -1,15 +1,15 @@
-import { postRepository } from "@/repositories/post/index";
 import Image from "next/image";
 import { Heading } from "../Heading";
 import { PostDate } from "../PostDate";
 import { MarkDownSafe } from "../MarkDownSafe";
+import { findPostBySlugPublicCached } from "@/lib/publicQueries";
 
 type SinglePostProps = {
   slug: string;
 }
 
 export async function SinglePost({ slug }: SinglePostProps) {
-  const post = await postRepository.findBySlugPublic(slug);
+  const post = await findPostBySlugPublicCached(slug);
   return (
     <article className="text-justify mb-16">
       <header className="flex flex-col gap-4 mb-4">

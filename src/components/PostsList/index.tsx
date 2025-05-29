@@ -1,8 +1,8 @@
 import { PostCard } from "../PostCard";
-import { findAllPublicPosts } from "@/lib/queries";
+import { findAllPostsPublicCached } from "@/lib/publicQueries";
 
 export async function PostsList() {
-  const posts = await findAllPublicPosts();
+  const posts = await findAllPostsPublicCached();
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 mb-16">

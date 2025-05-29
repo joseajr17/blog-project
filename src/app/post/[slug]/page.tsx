@@ -1,5 +1,5 @@
 import { SinglePost } from "@/components/SinglePost";
-import { postRepository } from "@/repositories/post/index";
+import { findPostBySlugPublicCached } from "@/lib/publicQueries";
 import { Metadata } from "next";
 import { Suspense } from "react";
 
@@ -9,7 +9,7 @@ type PostSlugPageProps = {
 
 export async function generateMetadata({ params }: PostSlugPageProps): Promise<Metadata> {
   const { slug } = await params;
-  const post = await postRepository.findBySlugPublic(slug);
+  const post = await findPostBySlugPublicCached(slug);
 
   return {
     title: post.title,
