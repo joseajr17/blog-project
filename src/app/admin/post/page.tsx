@@ -1,15 +1,18 @@
-import { findAllPostsAdmin } from "@/lib/adminQueries";
+import { PostListAdmin } from "@/components/admin/PostListAdmin";
+import { Metadata } from "next";
+import { Suspense } from "react";
 
 export const dynamic = 'force-dynamic';
 
-export default async function AdminPostPage() {
-  const posts = await findAllPostsAdmin();
+export const metadata: Metadata = {
+  title: 'Post Admin',
+};
 
+export default async function AdminPostPage() {
   return (
-    <div className="py-16 text-xl">
-      {posts.map(post => {
-        return <p key={post.id}> - {post.title} </p>
-      })}
-    </div>
+    // colocar fallback depois
+    <Suspense>
+      <PostListAdmin />
+    </Suspense>
   );
 }

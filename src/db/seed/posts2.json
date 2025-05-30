@@ -7,7 +7,7 @@
       "excerpt": "O futebol não é apenas um esporte, mas uma parte essencial da identidade nacional brasileira.",
       "content": "Desde as peladas nas praias até os grandes clássicos, o futebol impacta a cultura, a economia e o cotidiano do Brasil.",
       "coverImageUrl": "/images/img01.jpg",
-      "published": false,
+      "published": true,
       "createdAt": "2025-05-27T10:00:00Z",
       "updatedAt": "2025-05-27T10:00:00Z",
       "author": "Rafael Souza"
@@ -61,16 +61,40 @@
       "author": "Lucas Pereira"
     },
     {
-  "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
-  "title": "Guia Completo de Montagem de Treino Funcional para Atletas",
-  "slug": "guia-completo-de-treino-funcional-para-atletas",
-  "excerpt": "Aprenda a estruturar treinos funcionais de alta performance, com foco em força, agilidade e prevenção de lesões.",
-  "content": "**Disclaimer:** Este guia é constantemente atualizado com novas técnicas e metodologias. Sinta-se livre para colaborar, sugerir melhorias e adaptar os exercícios às suas necessidades específicas.\r\n\r\n# Treino Funcional para Atletas\r\n\r\nEste é meu esforço para criar um guia completo sobre [treino funcional](https://pt.wikipedia.org/wiki/Treino_funcional), focado em melhorar a performance esportiva. O objetivo é oferecer uma estrutura que qualquer atleta — seja de futebol, corrida, basquete ou natação — possa adaptar.\r\n\r\nPara monitoramento dos treinos, recomendo plataformas como [Strava](https://www.strava.com/) ou [Garmin Connect](https://connect.garmin.com/). Elas ajudam no acompanhamento de carga, intensidade e evolução.\r\n\r\n## Estrutura do Treino Funcional\r\n\r\nO treino está dividido em quatro camadas principais:\r\n\r\n### 1. Mobilidade e Ativação\r\n\r\n> A mobilidade prepara o corpo para movimentos mais complexos, reduzindo o risco de lesões.\r\n\r\n- Rolamento miofascial (foam roller)\r\n- Alongamentos dinâmicos\r\n- Exercícios de ativação dos glúteos, core e escápulas\r\n\r\n### 2. Força Funcional\r\n\r\n> Desenvolve força em padrões de movimento, não apenas em músculos isolados.\r\n\r\n- Agachamento unilateral (pistol squat)\r\n- Levantamento terra com kettlebell\r\n- Flexão de braços instável (bosu ou trx)\r\n- Remada baixa com elástico\r\n\r\n### 3. Potência e Agilidade\r\n\r\n> Essencial para esportes que exigem arranque, salto, sprint e mudança de direção.\r\n\r\n- Saltos pliométricos (caixa, barreira)\r\n- Sprint curto com resistência (paraquedas, trenó)\r\n- Ladder drills (escada de agilidade)\r\n- Skater jumps (saltos laterais)\r\n\r\n### 4. Condicionamento Metabólico\r\n\r\n> Simula a demanda física de uma partida, prova ou competição.\r\n\r\n- Circuito de 4 exercícios (ex.: kettlebell swing, burpee, mountain climber e corrida estacionária)\r\n- HIIT: 30 segundos ON / 15 segundos OFF (4 a 8 rounds)\r\n- Sled push (empurrar trenó)\r\n\r\n## Equipamentos Sugeridos\r\n\r\n- Kettlebell\r\n- TRX ou fitball\r\n- Corda naval\r\n- Bosu e escada de agilidade\r\n- Sled (trenó de empurrar)\r\n- Elásticos de resistência\r\n\r\n## Exemplo de Treino Completo\r\n\r\n```\r\n🔸 Aquecimento:\r\n- Foam roller: 2 min\r\n- Mobilidade dinâmica: 5 min\r\n\r\n🔸 Força:\r\n- Agachamento unilateral: 3x10\r\n- Remada elástica: 3x12\r\n- Flexão instável: 3x12\r\n\r\n🔸 Potência:\r\n- Ladder drill: 4x20 seg\r\n- Saltos na caixa: 3x10\r\n\r\n🔸 Condicionamento:\r\n- Circuito 3 rounds:\r\n  • Kettlebell swing - 20 reps\r\n  • Burpee - 15 reps\r\n  • Mountain climber - 30 reps\r\n  • Corrida estacionária - 40 seg\r\n\r\n🔸 Resfriamento:\r\n- Alongamento estático: 5 min\r\n```\r\n\r\n## Conclusão\r\n\r\nO treino funcional é uma ferramenta versátil, capaz de melhorar a performance, a prevenção de lesões e a capacidade física de qualquer atleta. Lembre-se: adapte sempre à sua modalidade e procure acompanhamento profissional.\r\n\r\n[Saiba mais sobre treino funcional aqui.](https://pt.wikipedia.org/wiki/Treino_funcional)",
-  "coverImageUrl": "/images/img06.jpg",
-  "published": true,
-  "createdAt": "2025-05-27T15:00:00Z",
-  "updatedAt": "2025-05-27T15:00:00Z",
-  "author": "Bruno Oliveira"
-}
+      "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+      "title": "Guia Completo de Montagem de Treino Funcional para Atletas",
+      "slug": "guia-completo-de-treino-funcional-para-atletas",
+      "excerpt": "Aprenda a estruturar treinos funcionais de alta performance, com foco em força, agilidade e prevenção de lesões.",
+      "content": "**Disclaimer:** Este guia é constantemente atualizado com novas técnicas e metodologias. Sinta-se livre para colaborar, sugerir melhorias e adaptar os exercícios às suas necessidades específicas.\r\n\r\n# Treino Funcional para Atletas\r\n\r\nEste é meu esforço para criar um guia completo sobre [treino funcional](https://pt.wikipedia.org/wiki/Treino_funcional), focado em melhorar a performance esportiva. O objetivo é oferecer uma estrutura que qualquer atleta — seja de futebol, corrida, basquete ou natação — possa adaptar.\r\n\r\nPara monitoramento dos treinos, recomendo plataformas como [Strava](https://www.strava.com/) ou [Garmin Connect](https://connect.garmin.com/). Elas ajudam no acompanhamento de carga, intensidade e evolução.\r\n\r\n## Estrutura do Treino Funcional\r\n\r\nO treino está dividido em quatro camadas principais:\r\n\r\n### 1. Mobilidade e Ativação\r\n\r\n> A mobilidade prepara o corpo para movimentos mais complexos, reduzindo o risco de lesões.\r\n\r\n- Rolamento miofascial (foam roller)\r\n- Alongamentos dinâmicos\r\n- Exercícios de ativação dos glúteos, core e escápulas\r\n\r\n### 2. Força Funcional\r\n\r\n> Desenvolve força em padrões de movimento, não apenas em músculos isolados.\r\n\r\n- Agachamento unilateral (pistol squat)\r\n- Levantamento terra com kettlebell\r\n- Flexão de braços instável (bosu ou trx)\r\n- Remada baixa com elástico\r\n\r\n### 3. Potência e Agilidade\r\n\r\n> Essencial para esportes que exigem arranque, salto, sprint e mudança de direção.\r\n\r\n- Saltos pliométricos (caixa, barreira)\r\n- Sprint curto com resistência (paraquedas, trenó)\r\n- Ladder drills (escada de agilidade)\r\n- Skater jumps (saltos laterais)\r\n\r\n### 4. Condicionamento Metabólico\r\n\r\n> Simula a demanda física de uma partida, prova ou competição.\r\n\r\n- Circuito de 4 exercícios (ex.: kettlebell swing, burpee, mountain climber e corrida estacionária)\r\n- HIIT: 30 segundos ON / 15 segundos OFF (4 a 8 rounds)\r\n- Sled push (empurrar trenó)\r\n\r\n## Equipamentos Sugeridos\r\n\r\n- Kettlebell\r\n- TRX ou fitball\r\n- Corda naval\r\n- Bosu e escada de agilidade\r\n- Sled (trenó de empurrar)\r\n- Elásticos de resistência\r\n\r\n## Exemplo de Treino Completo\r\n\r\n```\r\n🔸 Aquecimento:\r\n- Foam roller: 2 min\r\n- Mobilidade dinâmica: 5 min\r\n\r\n🔸 Força:\r\n- Agachamento unilateral: 3x10\r\n- Remada elástica: 3x12\r\n- Flexão instável: 3x12\r\n\r\n🔸 Potência:\r\n- Ladder drill: 4x20 seg\r\n- Saltos na caixa: 3x10\r\n\r\n🔸 Condicionamento:\r\n- Circuito 3 rounds:\r\n  • Kettlebell swing - 20 reps\r\n  • Burpee - 15 reps\r\n  • Mountain climber - 30 reps\r\n  • Corrida estacionária - 40 seg\r\n\r\n🔸 Resfriamento:\r\n- Alongamento estático: 5 min\r\n```\r\n\r\n## Conclusão\r\n\r\nO treino funcional é uma ferramenta versátil, capaz de melhorar a performance, a prevenção de lesões e a capacidade física de qualquer atleta. Lembre-se: adapte sempre à sua modalidade e procure acompanhamento profissional.\r\n\r\n[Saiba mais sobre treino funcional aqui.](https://pt.wikipedia.org/wiki/Treino_funcional)",
+      "coverImageUrl": "/images/img06.jpg",
+      "published": true,
+      "createdAt": "2025-05-27T15:00:00Z",
+      "updatedAt": "2025-05-27T15:00:00Z",
+      "author": "Bruno Oliveira"
+  },
+  {
+    "id": "6f708192-6789-0123-1425-f67890123456",
+    "title": "A importância do descanso na rotina de um atleta",
+    "slug": "importancia-do-descanso-na-rotina-do-atleta",
+    "excerpt": "Descansar é tão importante quanto treinar para alcançar alta performance.",
+    "content": "O descanso adequado permite a recuperação muscular, evita lesões por esforço repetitivo e melhora o desempenho geral. Alternar dias de treino com momentos de descanso ativo ou total é essencial para a evolução física.",
+    "coverImageUrl": "/images/img02.jpg",
+    "published": true,
+    "createdAt": "2025-05-28T11:00:00Z",
+    "updatedAt": "2025-05-28T11:00:00Z",
+    "author": "Mariana Alves"
+  },
+  {
+    "id": "7g8192a3-7890-1234-1526-067890123456",
+    "title": "Como a alimentação afeta o rendimento esportivo",
+    "slug": "alimentacao-e-rendimento-esportivo",
+    "excerpt": "O que você come antes e depois do treino pode mudar completamente seus resultados.",
+    "content": "Uma alimentação equilibrada garante energia, recuperação muscular e prevenção de fadiga. Macronutrientes, hidratação e timing das refeições são pontos-chave para maximizar o rendimento.",
+    "coverImageUrl": "/images/img01.jpg",
+    "published": true,
+    "createdAt": "2025-05-28T14:00:00Z",
+    "updatedAt": "2025-05-28T14:00:00Z",
+    "author": "Lucas Pereira"
+  }
   ]
 }
