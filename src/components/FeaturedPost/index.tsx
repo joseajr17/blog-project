@@ -6,6 +6,13 @@ export async function FeaturedPost() {
   const posts = await findAllPostsPublicCached();
   const post = posts[0];
 
+  if (posts.length <= 0) {
+    return (
+      // Criar um Component de Message depois
+      <h1 className="text-center text-2xl font-bold py-10 bg-red-500">Nenhum Post Publicado!</h1>
+    );
+  }
+
   const postLink = `post/${post.slug}`;
 
   return (
