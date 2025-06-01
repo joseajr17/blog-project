@@ -40,5 +40,8 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-#DB
+# DB
 db.sqlite3
+
+# Image
+uploads/
