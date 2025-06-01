@@ -5,6 +5,7 @@ import { Dialog } from "@/components/Dialog";
 import { useState, useTransition } from "react";
 import { FaTrash } from "react-icons/fa";
 import { toast } from "react-toastify";
+import { Button } from "@/components/ui/button";
 
 type DeletePostBtnProps = {
   id: string,
@@ -38,15 +39,16 @@ export function DeletePostBtn({ id, title }: DeletePostBtnProps) {
 
   return (
     <>
-      <button className="text-red-500 cursor-pointer hover:text-red-500/80 hover:scale-120 [&_svg]:w-5 [&_svg]:h-5 disabled:text-slate-700 disabled:cursor-not-allowed"
+      <Button
+        size='icon'
+        className="text-red-500 bg-accent/0 hover:text-red-500/80 hover:bg-accent/0 hover:scale-120 shadow-none disabled:text-slate-700 disabled:cursor-not-allowed cursor-pointer"
         aria-label={`Apgar post: ${title}`}
         title={`Apagar post: ${title}`}
         onClick={handleClick}
         disabled={isPending}
       >
         <FaTrash />
-      </button>
-
+      </Button>
       <Dialog
         isVisible={showDialog}
         onClose={handleDialogChange}
