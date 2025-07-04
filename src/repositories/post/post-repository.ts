@@ -7,4 +7,5 @@ export interface PostRepository {
   findBySlugPublic(slug: string): Promise<PostModel>;
 
   create(post: PostModel): Promise<PostModel>;
+  delete(id: string): Promise<PostModel>;
 }

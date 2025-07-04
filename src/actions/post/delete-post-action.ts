@@ -1,9 +1,6 @@
 'use server';
 
-import { drizzleDb } from "@/db/drizzle";
-import { postsTable } from "@/db/drizzle/schemas";
 import { postRepository } from "@/repositories/post";
-import { eq } from "drizzle-orm";
 import { revalidateTag } from "next/cache";
 
 export async function deletePostAction(id: string) {
@@ -14,15 +11,21 @@ export async function deletePostAction(id: string) {
     }
   }
 
-  const post = await postRepository.findById(id);
+  let post;
 
-  if (!post) {
-    return {
-      error: 'Este post não existe',
+  try {
+    post = await postRepository.delete(id);
+  } catch (error: unknown) {
+    if (error instanceof Error) {
+      return {
+        error: error.message
+      };
     }
-  }
 
-  await drizzleDb.delete(postsTable).where(eq(postsTable.id, id));
+    return {
+      error: 'Erro desconhecido'
+    };
+  }
 
   revalidateTag('posts');
   revalidateTag(`post-${post.slug}`);

@@ -2,6 +2,7 @@ import { PostModel } from "@/models/post/post-model";
 import { PostRepository } from "./post-repository";
 import { drizzleDb } from "@/db/drizzle";
 import { postsTable } from "@/db/drizzle/schemas";
+import { eq } from "drizzle-orm";
 
 export class DrizzlePostRepository implements PostRepository {
   async findAll(): Promise<PostModel[]> {
@@ -56,4 +57,18 @@ export class DrizzlePostRepository implements PostRepository {
 
     return post;
   }
+
+  async delete(id: string): Promise<PostModel> {
+    const post = await drizzleDb.query.posts.findFirst({
+      where: (posts, { eq }) => eq(posts.id, id)
+    });
+
+    if (!post)
+      throw new Error('Post não existe!')
+
+    await drizzleDb.delete(postsTable).where(eq(postsTable.id, id));
+
+    return post;
+  }
+
 }
