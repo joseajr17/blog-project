@@ -1,6 +1,7 @@
 import { PostModel } from "@/models/post/post-model";
 import { PostRepository } from "./post-repository";
 import { drizzleDb } from "@/db/drizzle";
+import { postsTable } from "@/db/drizzle/schemas";
 
 export class DrizzlePostRepository implements PostRepository {
   async findAll(): Promise<PostModel[]> {
@@ -41,17 +42,18 @@ export class DrizzlePostRepository implements PostRepository {
     return post;
   }
 
-}
+  async create(post: PostModel): Promise<PostModel> {
+    const postExists = await drizzleDb.query.posts.findFirst({
+      where: (posts, { or, eq }) =>
+        or(eq(posts.id, post.id), eq(posts.slug, post.slug)),
+      columns: { id: true }
+    });
 
-// (async () => {
-//   const repository = new DrizzlePostRepository();
-// const posts = await repository.findAll();
-// posts.forEach((post) => console.log(post.slug, post.published));
-// const post = await repository.findById('1a2b3c4d-1234-5678-9101-abcdef123456');
-// console.log(post);
-// const postsPublic = await repository.findAllPublic();
-// postsPublic.forEach((post) => console.log(post.slug, post.published));
-// const post = await repository.findBySlugPublic('fundamentos-do-basquete-para-iniciantes');
-// console.log(post);
-// }
-// )()
+    if (!!postExists)
+      throw new Error('Post com ID ou Slug já existe!')
+
+    await drizzleDb.insert(postsTable).values(post);
+
+    return post;
+  }
+}
