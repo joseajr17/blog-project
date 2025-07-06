@@ -5,15 +5,16 @@ import { useId } from "react";
 
 type InputTextProps = {
   labelText?: string,
+  isHidden?: boolean
 } & React.ComponentProps<typeof Input>;
 
-export function InputText({ labelText = '', ...props }: InputTextProps) {
+export function InputText({ labelText = '', isHidden, ...props }: InputTextProps) {
   const id = useId();
 
   return (
     <div className="flex flex-col gap-2">
       {labelText && (
-        <Label htmlFor={id}>
+        <Label htmlFor={id} hidden={isHidden}>
           {labelText}
         </Label>
       )}
@@ -27,6 +28,7 @@ export function InputText({ labelText = '', ...props }: InputTextProps) {
           " dark:disabled:text-slate-800 dark:disabled:bg-slate-600",
           "read-only:bg-slate-100 dark:read-only:bg-accent"
         )}
+        hidden={isHidden}
       />
     </div>
   );
