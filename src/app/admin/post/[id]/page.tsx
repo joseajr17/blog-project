@@ -6,7 +6,7 @@ import { notFound } from "next/navigation";
 
 export const dynamic = 'force-dynamic';
 
-export const metaData: Metadata = {
+export const metadata: Metadata = {
   title: 'Editar post',
 };
 
@@ -18,7 +18,7 @@ type AdminPostIdPageProps = {
 
 export default async function AdminPostIdPage({ params }: AdminPostIdPageProps) {
   const { id } = await params;
-  const post = await postRepository.findById(id).catch();
+  const post = await postRepository.findById(id).catch(() => undefined);
 
   if (!post)
     notFound();

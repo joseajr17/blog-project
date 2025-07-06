@@ -3,7 +3,7 @@ import { Metadata } from "next";
 
 export const dynamic = 'force-dynamic';
 
-export const metaData: Metadata = {
+export const metadata: Metadata = {
   title: 'Criar post',
 };
 
