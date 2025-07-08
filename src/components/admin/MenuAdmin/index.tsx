@@ -8,18 +8,28 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
 } from "@/components/ui/navigation-menu"
-import { CircleXIcon, FileTextIcon, HomeIcon, MenuIcon, PlusIcon } from "lucide-react";
+import { CircleXIcon, FileTextIcon, HomeIcon, HourglassIcon, LogOutIcon, MenuIcon, PlusIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useTransition } from "react";
 import { usePathname } from "next/navigation";
+import { logoutAction } from "@/actions/login/logout-action";
 
 export function MenuAdmin() {
   const [isOpen, setIsOpen] = useState(false);
   const pathName = usePathname();
+  const [isPending, startTransition] = useTransition();
 
   useEffect(() => {
     setIsOpen(false);
   }, [pathName]);
+
+  function handleLogout(e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) {
+    e.preventDefault();
+
+    startTransition(async () => {
+      await logoutAction();
+    });
+  }
 
   return (
     <nav className="flex items-center justify-center">
@@ -66,6 +76,28 @@ export function MenuAdmin() {
                 <Link className="flex flex-row items-center justify-start gap-2 h-10 shrink-0 hover:bg-slate-200 dark:hover:bg-accent/80" href='/admin/post/new'>
                   <PlusIcon /> Criar post
                 </Link>
+              </NavigationMenuLink>
+            </NavigationMenuItem>
+
+            <NavigationMenuItem>
+              <NavigationMenuLink asChild>
+                <a
+                  href="#"
+                  className="flex flex-row items-center justify-start gap-2 h-10 shrink-0 hover:bg-slate-200 dark:hover:bg-accent/80"
+                  onClick={handleLogout}
+                >
+                  {isPending && (
+                    <>
+                      <HourglassIcon /> Aguarde...
+                    </>
+                  )}
+
+                  {!isPending && (
+                    <>
+                      <LogOutIcon /> Sair
+                    </>
+                  )}
+                </a>
               </NavigationMenuLink>
             </NavigationMenuItem>
 
